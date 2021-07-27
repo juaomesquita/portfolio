@@ -23,7 +23,7 @@ const ABOUT = {
                 link: 'https://juaomesquita.github.io/portfolio/memory-match/src/index.html'
             },
             {
-                img: 'images/st-montagnarde.png',
+                img: 'https://juaomesquita.github.io/portfolio/images/st-montagnarde.png',
                 name: 'Saveurs et Traditions Montagnarde',
                 description: 'Freelance project to create a SPA/PWA application for a french gastronomy company, using the Vue.js framework and Google Firebase for data control. Project carried out with the collaboration of my classmate Murilo Fernandes.',
                 link: 'http://st-montagnarde.com.br'
