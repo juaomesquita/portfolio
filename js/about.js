@@ -21,7 +21,7 @@ const ABOUT = {
                 img: '../images/memory-match-preview.png',
                 name: 'Memory Match',
                 description: "Development of a memory match game, for the final project in the Web Programming 2 discipline. Used only Vanilla JavaScript, with CSS and HTML. Done in collaboration with my classmate Gabriel Lavigueur, under the guidance of Professor Martin Vachon.",
-                link: '../memory-match/src/'
+                link: '../memory-match/src/index.html'
             },
             {
                 img: '../images/st-montagnarde.png',
@@ -33,7 +33,7 @@ const ABOUT = {
                 img: '../images/musik.png',
                 name: 'Musik Music Store',
                 description: 'Development of a responsive website using only HTML and CSS, done as the final project for the Web Programming 1 course. Done in collaboration with classmates Gabriel Labrie and Gabriel Lavigueur, under the guidance of Professor Martin Vachon.',
-                link: '../musik/'
+                link: '../musik/index.html'
             },
             // {
             //     img: '../images/euzi.jpg',
