@@ -5,12 +5,12 @@ const ABOUT = {
         socials: [
             {
                 name: 'LinkedIn',
-                icon: '../images/linkedin.svg',
+                icon: 'https://juaomesquita.github.io/portfolio/images/linkedin.svg',
                 link: 'https://www.linkedin.com/in/juaomesquita/'
             },
             {
                 name: 'Instagram',
-                icon: '../images/instagram.svg',
+                icon: 'https://juaomesquita.github.io/portfolio/images/instagram.svg',
                 link: 'https://www.instagram.com/juaomesquita'
             },
         ],
