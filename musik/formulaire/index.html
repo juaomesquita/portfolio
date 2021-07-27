@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="../images/logo.png" alt="logo" class="logo-header">
+            <ul>
+                <li><a href="../index.html" class="navlink">Home</a></li>
+                <li><a href="../catalogue/index.html" class="navlink">Catalogue</a></li>
+                <li><a href="../formulaire/index.html" class="navlink">Contact</a></li>
+                <li>
+                    <div class="search-bar">
+                        <a href="#">
+                            <div class="search-icon">
+
+                            </div>
+                        </a>
+
+                        <input type="text" placeholder="Search..">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="formulaire-main">
+
+
+        <div class="form-image">
+
+
+        </div>
+
+        <form action="../formulaire/index.html">
+
+            <fieldset>
+                <h2>Contactez-nous</h2>
+
+                <div>
+                    <label for="lastName">Nom</label>
+                    <input type="text" id="lastName" placeholder="Nom" required maxlength="50" autofocus>
+                </div>
+
+                <div>
+                    <label for="firstName">Prénom</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Prénom" required maxlength="50">
+                </div>
+
+                <div>
+                    <label for="userEmail">Courriel</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Courriel" required maxlength="150">
+                </div>
+
+                <div>
+                    <label for="userPhone">Téléphone</label>
+                    <input type="tel" id="userPhone" name="userPhone" placeholder="450-123-4567"
+                        pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$" required>
+                </div>
+
+                <div>
+                    <label for="userAge">Âge</label>
+                    <input type="number" id="userAge" name="userAge" min="16" max="120" required placeholder="Âge">
+                </div>
+
+                <div>
+                    <label for="formulaire-pays" class="label-pays">Pays</label>
+                    <select id="formulaire-pays" name="formulaire-pays" required>
+                        <option value="">Choisir</option>
+                        <option value="a">Canada</option>
+                        <option value="b">États-unis</option>
+                        <option value="c">Brésil</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="genderMale">Homme</label>
+                    <input type="radio" name="userGender" id="genderMale" value="1" required>
+                </div>
+
+                <div>
+                    <label for="genderFemale">Femme</label>
+                    <input type="radio" name="userGender" id="genderFemale" value="2" required>
+                </div>
+
+                <div>
+                    <label for="checkboxAnonyme">Anonyme</label>
+                    <input type="checkbox" name="checkboxAnonyme" id="checkboxAnonyme" value="anonyme">
+                </div>
+
+                <div>
+                    <textarea name="commentaireFormulaire" id="commentaireFormulaire"
+                        placeholder="Commentaires/Questions" cols="40" rows="5"></textarea>
+                </div>
+
+                <input class="button" type="submit" value="Soumettre">
+            </fieldset>
+
+        </form>
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <ul class="footer-links">
+                <li class="footer-link">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li class="footer-link">
+                    <a href="catalogue/index.html">
+                        Catalogue
+                    </a>
+                </li>
+                <li class="footer-link">
+                    <a href="formulaire/index.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-center">
+            <p>Musik Music Store &copy; 2021</p>
+        </div>
+        <div class="footer-right">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.22689410892!2d-73.55348038447741!3d45.52563947910176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc918e0c061b07f%3A0x647a6b6d7cb681a7!2sISI%2C%20L&#39;institut%20Sup%C3%A9rieur%20d&#39;Informatique!5e0!3m2!1spt-PT!2sca!4v1623676064184!5m2!1spt-PT!2sca"
+                width="300" height="160" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <p>2100 Boul. de Maisonneuve - Montreal - QC - Canada</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

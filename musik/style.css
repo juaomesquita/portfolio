@@ -1,0 +1,521 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@keyframes enter-page {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+body {
+    animation: enter-page 2.5s ease normal;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* * {
+    outline: 1px solid red;
+} */
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: #FFFFFF;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.navbar>ul {
+    flex-basis: 70vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    order: 10;
+}
+
+.logo-header {
+    display: inline;
+    order: 1;
+    height: 80%;
+    margin-top: 5px;
+}
+
+.search-bar {
+    display: flex;
+    display: none;
+}
+
+.search-bar input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.search-icon {
+    background-image: url(images/search-solid.svg);
+    width: 3vw;
+    height: 3vh;
+    background-repeat: no-repeat;
+}
+
+.navbar li {
+    list-style: none;
+    text-align: center;
+}
+
+.navlink {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: to left .5s ease;
+}
+
+.navlink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.navlink:hover::after {
+    width: 100%;
+    /* transition: width .3s; */
+}
+
+a:hover, a:focus {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+    width: fit-content;
+    margin: auto;
+    transition: .5s ease-in-out;
+}
+
+.button:hover, .button:focus {
+    color: white;
+    background-color: black;
+}
+
+footer {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer-map iframe {
+    width: 10px;
+    height: 10px;
+}
+
+.footer-left {
+    display: flex;
+}
+
+.footer-left .footer-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.footer-right {
+    /* justify-content: center;
+    align-items: center; */
+    margin-block: 10px;
+}
+
+.footer-link {
+    align-items: center;
+}
+
+.footer-center {
+    color: white;
+}
+
+.footer-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: to left .5s ease;
+}
+
+.footer-link a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.footer-link a:hover::after {
+    width: 100%;
+    /* transition: width .3s; */
+}
+
+/*===================== Page Accueil =====================*/
+
+@keyframes background-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.carrousel-1 {
+    background: linear-gradient(-45deg, #e96841, #e92e76, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: background-gradient 45s ease infinite;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.header-anchor-link {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    transition: letter-spacing 1s ease-in-out;
+    animation: anchor-link 4s ease-in-out infinite;
+}
+
+@keyframes anchor-link {
+    0% {
+        letter-spacing: 1px;
+    }
+    50% {
+        letter-spacing: 4px;
+    }
+    100% {
+        letter-spacing: 1px;
+    }
+}
+
+.header-anchor-link:hover, .header-anchor-link:focus {
+    animation-play-state: paused;
+}
+
+.header-title {
+    color: white;
+    letter-spacing: 3px;
+    margin-block: auto;
+}
+
+#carrousel {
+    width: 100%;
+}
+
+.home-product {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-product img{
+    max-height: 250px;
+}
+
+#video-player iframe {
+    margin-block: 3em;
+    width: 90vw;
+    height: 50vh;
+}
+
+/*=================== Page Contact ===================*/
+
+.formulaire-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-image {
+    background-image: url(../musik/images/home/guitar1.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border-radius: 10px;
+    border: 0px;
+}
+
+label, input {
+    display: inline-block;
+    width: 100px;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form fieldset div {
+    margin-block: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form input, form select {
+    width: 45%;
+    border-radius: 25px;
+    /* outline: none; */
+    border: .5px solid rgb(136, 136, 136);
+    transition: .5s ease;
+    line-height: 2em;
+    text-align: center;
+}
+
+form input[type=text]:focus, form input[type=number]:focus, form input[type=email]:focus, form input[type=tel]:focus {
+    outline: none;
+    width: 55%;
+    box-shadow: 1px 1px 10px rgba(0, 128, 0, 0.514);
+}
+
+form select:focus {
+    outline: none;
+}
+
+form input[type=submit] {
+    font-family: 'Staatliches', cursive;
+    border-radius: 0px;
+    background-color: white;
+}
+
+form input[type=submit]:focus, textarea:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+/*=================== Page Produit ===================*/
+
+#produit-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#produit-wrapper article {
+    display: flex;
+    flex-direction: column;
+}
+
+.produit-main img {
+    width: 100%;
+}
+
+#produit-wrapper article a {
+    margin-block: 10px;
+}
+
+#produit-wrapper aside {
+    margin-block: 10px;
+}
+
+/*=================== Page Catalogue ===================*/
+
+#catalogue-wrapper {
+    width: 100%;
+}
+
+.catalogue-produits {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article-produit {
+    width: 90%;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.article-produit>h1 {
+    height: 5vh;
+    text-decoration: underline;
+}
+
+.article-produit img {
+    width: 90%;
+    /* border: 1px solid black; */
+    align-self: center;
+}
+
+.article-produit p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    text-align: start;
+}
+
+.article-produit .button {
+    width: 50%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    /*=================== Page Accueil ===================*/
+    .home-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .home-product {
+        width: 30%;
+    }
+    .home-section h2 {
+        width: 100vw;
+        display: block;
+    }
+    .search-bar {
+        display: flex;
+    }
+    /*=================== Page Contact ===================*/
+    .formulaire-main {
+        display: flex;
+        flex-direction: row;
+    }
+    .form-image {
+        height: 600px;
+        width: 100%;
+    }
+    form fieldset div {
+        flex-direction: row;
+    }
+    /*=================== Page Produit ===================*/
+    .produit-main img {
+        width: 75%;
+    }
+    form label {
+        text-align: left;
+    }
+    /* flex-direction: column; */
+    /*=================== Page Catalogue ===================*/
+    .catalogue-produits {
+        justify-content: space-evenly;
+    }
+    .article-produit {
+        width: calc((100% / 3) - 50px);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    footer {
+        flex-direction: row;
+    }
+    .footer-left .footer-links {
+        flex-direction: column;
+    }
+    .footer-center {
+        margin-block: auto;
+        /* align-items: center;  */
+    }
+    /* Page Accueil */
+    /* Page Contact */
+    /* Page Produit */
+    .produit-main img {
+        width: 100%;
+        margin-left: 5vh;
+    }
+    .description-produit {
+        display: inline-block;
+        width: 90%;
+    }
+    #produit-wrapper {
+        height: 85vh;
+    }
+    #produit-wrapper article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /* Page Catalogue */
+    .article-produit {
+        width: calc((100% / 4) - 50px);
+    }
+    .article-produit .button {
+        width: 25%;
+    }
+}

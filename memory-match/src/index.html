@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match JavaScript</title>
+    <script src="js/cards.js"></script>
+    <script src="js/memoire.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/cards-front.png">
+</head>
+
+<body>
+    <a href="../../index.html">
+        <div class="back-arrow">
+            <img src="images/arrow-left-solid.svg" alt="back-arrow" class="back-arrow-image">
+        </div>
+    </a>
+    <div class="container">
+        <div class="setting" id="configuration">
+            <div id="myModal" class="modal">
+
+
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modalMessage"></p>
+                </div>
+
+
+            </div>
+            <form action="" id="startOptions" method="POST">
+
+                <div class="difficulty-buttons">
+                    <div class="difficulty">
+                        <label for="easy" class="difficulty-label">Easy</label>
+                        <input id="easy" type="radio" name='difficulty' value="8">
+                    </div>
+                    <div class="difficulty">
+                        <label for="medium" class="difficulty-label">Medium</label>
+                        <input id="medium" type="radio" name='difficulty' value="12">
+                    </div>
+                    <div class="difficulty">
+                        <label for="hard" class="difficulty-label">Hard</label>
+                        <input id="hard" type="radio" name='difficulty' value="16">
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" name="Start" value="Start" id="startButton">
+                </div>
+
+            </form>
+        </div>
+        <div id="gameAreaContainer">
+            <div id="gameArea">
+
+            </div>
+        </div>
+        <div class="player" id="game">
+            <div>
+                <p>Pair trouve</p>
+                <p id="found">0</p>
+            </div>
+            <div>
+                <p>Temps ecoule</p>
+                <p id="timer">0</p>
+            </div>
+            <div>
+                <p>Coup manquer</p>
+                <p id="missClick">0</p>
+            </div>
+            <div>
+                <p>Meilleur Temps</p>
+                <p id="highscore">None</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

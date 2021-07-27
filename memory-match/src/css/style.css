@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ed1b2f;
+    overflow-x: hidden;
+}
+
+form {
+    width: 200px;
+    text-align: center;
+}
+
+/* ================= Area de jeu ====================== */
+
+.back-arrow{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    left: 5px;
+    transition: 2s;
+}
+
+.back-arrow-image{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.back-arrow:hover, .back-arrow:focus{
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+}
+
+#gameArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.flip-container, .card-front, .card-back {
+    width: 150px;
+    height: 150px;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 25%;
+}
+
+.card-front, .card-back {
+    align-items: center;
+    transition: .2s ease-in;
+    border-radius: 20px;
+    background-position: center;
+}
+
+.card-front {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-image: url("../images/cards-front.png");
+    background-size: cover;
+    transform: rotate(0deg);
+}
+
+.show {
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+
+.hide {
+    opacity: 0;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    background-image: url('../images/card-back-s.png');
+    background-size: cover;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 20px black;
+    cursor: pointer;
+}
+
+.card {
+    transition: .2s ease-in-out;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.hide-display {
+    display: none;
+}
+
+/* ================= Area de joueur ====================== */
+
+.setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-left: 1px solid #333333;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #333333;
+    height: 100vh;
+}
+
+.player, .setting {
+    background-color: #ed1b2f;
+    justify-content: center;
+}
+
+#startButton {
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #000000;
+    transition: 2s letter-spacing, 2s color, 1s background-color;
+    cursor: pointer;
+    animation-name: startMove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+label {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.difficulty {
+    margin-block: 10px;
+}
+
+.difficulty-buttons {
+    margin-bottom: 25px;
+}
+
+#gameAreaContainer {
+    animation: show 4s ease-in-out;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes startMove {
+    0% {
+        letter-spacing: normal;
+    }
+    50% {
+        letter-spacing: 4px;
+    }
+    100% {
+        letter-spacing: normal;
+    }
+}
+
+#startButton:hover {
+    color: black;
+    background-color: white;
+}
+
+p {
+    font-family: 'Press Start 2P', cursive;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .container {
+        flex-direction: column;
+        position: relative;
+        height: auto;
+    }
+    .setting {
+        height: 200px;
+    }
+    .player {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 200px;
+    }
+}
+
+/* MODAL */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #333333;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
