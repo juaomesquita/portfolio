@@ -7,9 +7,12 @@
 
 body{
     background-color: black;
-    background-image: url('../images/bg-mobile.jpg');
-    background-size: cover;
-    background-position-y: 300px;
+    background-image: url('../images/mtl.jpg');
+    /* background-size: cover; */
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* background-attachment: fixed; */
     /* background-position: center; */
 }
 
@@ -201,7 +204,11 @@ input[type='radio']:checked + label > div{
     justify-content: space-between;
     color: white;
     background-color: rgba(253, 253, 253, 0.04);
+    transition: .5s background-color, .5s box-shadow;
     /* #1b263a */
+}
+.project:focus{
+    font-weight: 600;
 }
 .project-title{
     font-weight: 400;
@@ -248,7 +255,7 @@ input[type='radio']:checked + label > div{
 
     .project{
         width: 40%;
-        transition: .5s background-color, .5s box-shadow;
+        
         
     }
 
