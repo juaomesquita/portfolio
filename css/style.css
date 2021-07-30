@@ -238,6 +238,12 @@ input[type='radio']:checked + label > div{
         background-position: top;
         background-attachment: fixed;
         background-size: cover;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    body::-webkit-scrollbar{
+        display: none;
     }
 
     .project{
