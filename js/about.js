@@ -1,7 +1,7 @@
 const ABOUT = {
     pt: {
         buttons: ['projetos', 'contatos', 'sobre mim'],
-        intro: "My name is João Mesquita, I study web programming at the Institut Superieur d'Informatique in Montréal, QC - Canada. I currently work part-time at Provigo Marc Bougie, to help with my costs in Montréal. I study programming and web development since 2018, having started in the Information Systems course at the University Center of Patos de Minas, from where I had to leave to explore new airs in a new country. At the moment I am looking for an opportunity to put my knowledge into practice and gain experience in the area .",
+        intro: "My name is João Mesquita, I study web programming at the Institut Superieur d'Informatique in Montréal, QC - Canada. I currently work part-time at Provigo Marc Bougie, to help with my costs in Montréal. I study programming and web development since 2018, having started in the Information Systems course at the University Center of Patos de Minas, from where I had to leave to explore new airs in a new country. At the moment I am looking for an opportunity to put my knowledge into practice and gain experience in the area.",
         socials: [
             {
                 name: 'LinkedIn',
