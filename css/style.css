@@ -6,15 +6,18 @@
 }
 
 body{
-    background-color: black;
+    background-color: #050608;
     background-image: url('../images/mtl.jpg');
     /* background-size: cover; */
     background-size: 200%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
     background-position: bottom;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     /* background-position: center; */
+    /* height: 200%; */
 }
+
+
 
 :root{
     --main-bg-color: #351f66;
@@ -62,6 +65,7 @@ body{
     display: flex;
     flex-direction: column;
     /* height: 100vh; */
+    height: 100vh;
     justify-content: center;
 }
 
@@ -113,7 +117,7 @@ input[type='radio']{
 
 input[type='radio']:checked + label > div{
     /* background-color: #bd011d; */
-    background-color: #000;
+    background-color: rgba(255, 255, 255, 0.15);
     color: #fff;
     /* box-shadow: -5px 2px 0px #6383be; */
     box-shadow: -5px 2px 0px #fff;

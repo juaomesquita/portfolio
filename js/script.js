@@ -20,6 +20,8 @@ window.addEventListener('load', (e) => {
         container.style.height = 'auto'
         aboutSection.style.display = 'block'
         aboutSection.classList.add('fade-in')
+        container.style.height = '100%'
+
     }, false)
 
     projectsButton.addEventListener('click', function clicked(e) {
@@ -27,7 +29,7 @@ window.addEventListener('load', (e) => {
         // contactSection.style.display = 'none'
         projectsSection.style.display = 'block'
         projectsSection.classList.add('fade-in')
-
+        container.style.height = '100%'
     }, false)
 
     function addProjects() {
