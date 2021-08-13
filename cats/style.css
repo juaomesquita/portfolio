@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url('http://placekitten.com/1920/1081'); */
+}
+
+.title {
+    /* width: 80%; */
+    font-weight: 500;
+    font-size: 2.3rem;
+    margin-inline: 30px;
+}
+
+.subtitle {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+}
+
+.container {
+    /* background-color: #c9c9c9; */
+    display: flex;
+    flex-direction: column;
+    /* color: rgb(44, 44, 44); */
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+}
