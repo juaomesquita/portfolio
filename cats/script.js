@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', e => {
         })
         .catch(err => console.log(err));
 
-    fetch(`http://placekitten.com/1920/${dimension}`)
+    fetch(`https://placekitten.com/1920/${dimension}`)
         .then(response => response)
         .then(data => {
             document.body.style.backgroundImage = `url(${data['url']})`;
