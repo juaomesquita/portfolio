@@ -76,6 +76,9 @@ window.addEventListener('load', (e) => {
             link.appendChild(socialMediaLink)
             socialMediaLink.style.backgroundImage = `url('${social.icon}')`
             link.setAttribute('href', social.link)
+            if(social.name === 'CV') {
+                link.setAttribute('target', 'blank')
+            }
             socialMediaLinks.appendChild(link)
             
         })
