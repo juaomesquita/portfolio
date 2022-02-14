@@ -1,7 +1,7 @@
 const ABOUT = {
     pt: {
         buttons: ['projetos', 'contatos', 'sobre mim'],
-        intro: "My name is João Mesquita, I'm a fullstack developer graduated in web programming at the Institut Superieur d'Informatique in Montréal, QC - Canada. I study programming and web development since 2018, having started in the Information Systems major at the University Center of Patos de Minas, from where I had to leave to explore new airs in a new country.",
+        intro: "My name is João Mesquita, I'm a fullstack developer graduated in web programming at the Institut Superieur d'Informatique in Montréal, QC - Canada. I study design and web development since 2018, having started in the Information Systems major at the University Center of Patos de Minas, from where I had to leave to explore new airs in a new country.",
         socials: [
             {
                 name: 'LinkedIn',
