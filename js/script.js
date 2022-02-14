@@ -12,7 +12,6 @@ window.addEventListener('load', (e) => {
     addProjects()
     addBio()
     // start()
-
     console.log(projectsButton)
     aboutButton.addEventListener('click', (e) => {
         // contactSection.style.display = 'none'
@@ -71,10 +70,14 @@ window.addEventListener('load', (e) => {
         ABOUT.pt.socials.forEach(social => {
             const link = document.createElement('a')
             const socialMediaLink = document.createElement('div')
+            if(social.name === 'Cats'){
+                socialMediaLink.classList.add('cats')
+            }
             link.appendChild(socialMediaLink)
             socialMediaLink.style.backgroundImage = `url('${social.icon}')`
             link.setAttribute('href', social.link)
             socialMediaLinks.appendChild(link)
+            
         })
 
 
