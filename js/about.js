@@ -8,10 +8,15 @@ const ABOUT = {
                 icon: 'https://juaomesquita.github.io/portfolio/images/linkedin.svg',
                 link: 'https://www.linkedin.com/in/juaomesquita/'
             },
+            // {
+            //     name: 'Instagram',
+            //     icon: 'https://juaomesquita.github.io/portfolio/images/instagram.svg',
+            //     link: 'https://www.instagram.com/juaomesquita'
+            // },
             {
-                name: 'Instagram',
-                icon: 'https://juaomesquita.github.io/portfolio/images/instagram.svg',
-                link: 'https://www.instagram.com/juaomesquita'
+                name: 'CV',
+                icon: 'https://juaomesquita.github.io/portfolio/images/code-solid.svg',
+                link: 'https://juaomesquita.github.io/portfolio/cv.pdf'
             },
         ],
 
