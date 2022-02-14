@@ -15,7 +15,7 @@ const ABOUT = {
             // },
             {
                 name: 'CV',
-                icon: 'https://juaomesquita.github.io/portfolio/images/code-solid.svg',
+                icon: 'https://juaomesquita.github.io/portfolio/images/file-code-solid.svg',
                 link: 'https://juaomesquita.github.io/portfolio/docs/cv.pdf'
             },
         ],
