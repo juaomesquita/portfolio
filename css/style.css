@@ -273,13 +273,13 @@ input[type="radio"]:checked + label > div {
   }
 
   body {
-    background-image: url("../images/bonefire.jpg");
+    background-image: url("../images/sparks.jpg");
     background-position: top;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100%;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background-position-y: -40vh;
+    background-position-y: -50vh;
     /* animation: move-ani 10s ease-in-out; */
   }
 
@@ -290,6 +290,12 @@ input[type="radio"]:checked + label > div {
     height: 68px;
     fill: #000;
     border-radius: 10px;
+    opacity: 50%;
+    transition: opacity .5s;
+  }
+
+  .social-media-links div:hover{
+    opacity: 1;
   }
 
   body::-webkit-scrollbar {
@@ -327,4 +333,10 @@ input[type="radio"]:checked + label > div {
   #content-section-about {
     height: 100vh;
   }
+}
+
+@media only screen and (min-width: 1280px){
+    body {
+        background-position-y: -90vh;
+      }
 }
