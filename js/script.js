@@ -73,12 +73,12 @@ window.addEventListener('load', (e) => {
             if(social.name === 'Cats'){
                 socialMediaLink.classList.add('cats')
             }
+            else {
+                link.setAttribute('target', '_blank')
+            }
             link.appendChild(socialMediaLink)
             socialMediaLink.style.backgroundImage = `url('${social.icon}')`
             link.setAttribute('href', social.link)
-            if(social.name === 'CV') {
-                link.setAttribute('target', '_blank')
-            }
             socialMediaLinks.appendChild(link)
             
         })
