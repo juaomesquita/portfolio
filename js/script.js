@@ -73,6 +73,9 @@ window.addEventListener('load', (e) => {
             if(social.name === 'Cats'){
                 socialMediaLink.classList.add('cats')
             }
+            if(social.name === 'Contact'){
+                socialMediaLink.classList.add('contact')
+            }
             else {
                 link.setAttribute('target', '_blank')
             }
