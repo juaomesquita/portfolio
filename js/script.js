@@ -7,13 +7,15 @@ window.addEventListener('load', (e) => {
     const aboutSection = document.getElementById('content-section-about')
     const projectsSection = document.getElementById('content-section-projects')
     const projectsArea = document.getElementById('projects-area')
+    const namePosition = document.getElementById('name-position')
     // const contactSection = document.getElementById('content-section-contact')
-
+    addNamePosition()
     addProjects()
     addBio()
     // start()
     console.log(projectsButton)
     aboutButton.addEventListener('click', (e) => {
+        namePosition.style.display = 'none'
         // contactSection.style.display = 'none'
         projectsSection.style.display = 'none'
         container.style.height = 'auto'
@@ -25,6 +27,7 @@ window.addEventListener('load', (e) => {
 
     projectsButton.addEventListener('click', function clicked(e) {
         aboutSection.style.display = 'none'
+        namePosition.style.display = 'none'
         // contactSection.style.display = 'none'
         projectsSection.style.display = 'block'
         projectsSection.classList.add('fade-in')
@@ -88,6 +91,10 @@ window.addEventListener('load', (e) => {
 
 
     }   
+
+    function addNamePosition() {
+        container.appendChild(namePosition)
+    }
 
     function start(){
         aboutButton.click()
