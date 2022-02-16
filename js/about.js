@@ -19,6 +19,11 @@ const ABOUT = {
                 link: 'https://juaomesquita.github.io/portfolio/docs/cv.pdf'
             },
             {
+                name: 'Contact',
+                icon: 'https://juaomesquita.github.io/portfolio/images/at.svg',
+                link: 'mailto:juaomesquita@gmail.com'
+            },
+            {
                 name: 'Cats',
                 icon: 'https://juaomesquita.github.io/portfolio/images/cat-solid.svg',
                 link: 'https://juaomesquita.github.io/portfolio/cats'
