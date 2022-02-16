@@ -131,7 +131,7 @@ input[type="radio"]:checked + label > div {
 
 .social-media-links {
   /* height: 200px; */
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -274,7 +274,7 @@ input[type="radio"]:checked + label > div {
 
   .social-media-links {
     /* height: 200px; */
-    width: 70%;
+    width: 50%;
   
   }
 
