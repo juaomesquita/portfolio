@@ -41,6 +41,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.icon-ref{
+  text-decoration: none;
+  color: #fff;
+  opacity: .5;
+  transition: opacity .5s;
+  font-family: "Poppins", sans-serif;
+}
+
+.icon-ref:hover{
+  opacity: 1;
+}
+
 #name-position {
   text-align: center;
   font-size: 1.5em;
