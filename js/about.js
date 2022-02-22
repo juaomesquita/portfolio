@@ -35,7 +35,8 @@ const ABOUT = {
                 img: 'https://juaomesquita.github.io/portfolio/images/memory-match-preview.png',
                 name: 'Memory Match',
                 description: "Development of a memory match game, for the final project in the Web Programming 2 discipline. Used only Vanilla JavaScript, with CSS and HTML. Done in collaboration with my classmate Gabriel Lavigueur, under the guidance of Professor Martin Vachon.",
-                link: 'https://juaomesquita.github.io/portfolio/memory-match/src/index.html'
+                link: 'https://juaomesquita.github.io/portfolio/memory-match/src/index.html',
+                source: 'https://github.com/juaomesquita/portfolio/tree/master/memory-match/src'
             },
             {
                 img: 'https://juaomesquita.github.io/portfolio/images/st-montagnarde.png',
@@ -47,7 +48,8 @@ const ABOUT = {
                 img: 'https://juaomesquita.github.io/portfolio/images/musik.png',
                 name: 'Musik Music Store',
                 description: 'Development of a responsive website using only HTML and CSS, done as the final project for the Web Programming 1 course. Done in collaboration with classmates Gabriel Labrie and Gabriel Lavigueur, under the guidance of Professor Martin Vachon.',
-                link: 'https://juaomesquita.github.io/portfolio/musik/index.html'
+                link: 'https://juaomesquita.github.io/portfolio/musik/index.html',
+                source: 'https://github.com/juaomesquita/portfolio/tree/master/musik'
             },
             // {
             //     img: '../images/euzi.jpg',
