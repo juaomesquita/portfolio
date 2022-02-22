@@ -47,6 +47,8 @@ body {
   opacity: .5;
   transition: opacity .5s;
   font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  display: none;
 }
 
 .icon-ref:hover{
@@ -274,6 +276,11 @@ input[type="radio"]:checked + label > div {
 }
 
 @media only screen and (min-width: 1007px) {
+
+  .icon-ref{
+    display: block;
+  }
+  
   @keyframes move {
     0% {
       background-position-y: 0;
